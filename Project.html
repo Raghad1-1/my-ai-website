@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <!-- Meta Data -->
+  <meta charset="UTF-8" />
+
+  <!-- Website Title -->
+  <title>الذكاء الاصطناعي</title>
+
+  <style type="text/css">
+
+    body {
+      font-family: Georgia, serif;
+      background: linear-gradient(#eef1f8, #e5e9f2);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #2e1a47, #4a2f75);
+      color: #ffffff;
+      text-align: center;
+      padding: 28px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+
+    /* Navigation Menu */
+    .menu {
+      background-color: #3b2560;
+      text-align: center;
+      padding: 14px;
+    }
+
+    .menu button {
+      background-color: #ffffff;
+      color: #2e1a47;
+      border: none;
+      padding: 10px 22px;
+      margin: 5px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: Georgia, serif;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .menu button:hover {
+      background-color: #e8defd;
+      transform: scale(1.05);
+    }
+
+    /* Headings */
+    h2 {
+      font-size: 22px;
+      color: #2e1a47;
+      border-right: 4px solid #4a2f75;
+      padding-right: 10px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 17px;
+      color: #333;
+    }
+
+    /* Paragraphs */
+    p {
+      font-size: 15px;
+      line-height: 2;
+      color: #444;
+    }
+
+    /* Lists */
+    ul {
+      font-size: 15px;
+      line-height: 2;
+      color: #444;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 14px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    th {
+      background-color: #2e1a47;
+      color: #ffffff;
+      padding: 12px;
+      text-align: right;
+    }
+
+    td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      background-color: #ffffff;
+    }
+
+    tr:hover td {
+      background-color: #eee7ff;
+    }
+
+    /* Main Container */
+    #container {
+      max-width: 750px;
+      margin: 30px auto;
+      padding: 0 16px;
+    }
+
+    /* Pages */
+    .page {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 20px;
+      display: none;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+
+    /* Navigation Buttons */
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .btn {
+      padding: 10px 28px;
+      background-color: #3b2560;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-family: Georgia, serif;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2e1a47;
+      transform: scale(1.03);
+    }
+
+    .btn-outline {
+      background-color: #ffffff;
+      color: #2e1a47;
+      border: 2px solid #2e1a47;
+    }
+
+    /* Quiz */
+    .quiz-box {
+      background-color: #f7f4ff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .quiz-option {
+      display: block;
+      padding: 10px 14px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: Georgia, serif;
+      background-color: #fff;
+      width: 100%;
+      text-align: right;
+      transition: 0.3s;
+    }
+
+    .quiz-option:hover {
+      background-color: #ece3ff;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+
+  <header>
+
+    <h1>🧠 الذكاء الاصطناعي</h1>
+
+  </header>
+
+  <!-- Navigation Menu -->
+
+  <nav class="menu">
+
+    <button onclick="goToPage(1)">الرئيسية</button>
+
+    <button onclick="goToPage(2)">التطبيقات</button>
+
+    <button onclick="goToPage(3)">المستقبل</button>
+
+  </nav>
+
+  <!-- Main Container -->
+
+  <div id="container">
+
+    <!-- Page 1 -->
+
+    <div class="page" id="page1">
+
+      <h2>ما هو الذكاء الاصطناعي؟</h2>
+
+      <p>
+        الذكاء الاصطناعي هو فرع من علوم الحاسب يهدف إلى بناء أنظمة
+        قادرة على تنفيذ مهام تحتاج عادةً إلى ذكاء بشري، مثل التعلم
+        والتفكير وحل المشكلات وفهم اللغة.
+      </p>
+
+      <!-- AI Image -->
+
+      <img src="ai.jpg"
+           alt="Artificial Intelligence"
+           width="100%"
+           style="border-radius:10px; margin-top:15px;">
+
+      <p>
+        بدأت فكرة الذكاء الاصطناعي في الخمسينيات على يد العالم
+        <strong>جون مكارثي</strong>، وتطورت بشكل كبير مع تطور الحواسيب
+        وتوفر كميات ضخمة من البيانات.
+      </p>
+
+      <h3>أنواع الذكاء الاصطناعي</h3>
+
+      <ul>
+
+        <li>
+          <strong>الذكاء الضيق:</strong>
+          متخصص في مهمة واحدة مثل التعرف على الوجوه
+        </li>
+
+        <li>
+          <strong>الذكاء العام:</strong>
+          قادر على أداء أي مهمة بشرية ولا يزال نظرياً
+        </li>
+
+        <li>
+          <strong>الذكاء الخارق:</strong>
+          يتجاوز الإنسان في كل شيء وهو مفهوم مستقبلي
+        </li>
+
+      </ul>
+
+      <div class="nav-buttons">
+
+        <span></span>
+
+        <button class="btn" onclick="goToPage(2)">
+          التالي ←
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Page 2 -->
+
+    <div class="page" id="page2">
+
+      <h2>تطبيقات الذكاء الاصطناعي</h2>
+
+      <p>
+        الذكاء الاصطناعي موجود في حياتنا اليومية أكثر مما نتصور:
+      </p>
+
+      <!-- Applications Table -->
+
+      <table>
+
+        <thead>
+
+          <tr>
+
+            <th>المجال</th>
+
+            <th>مثال</th>
+
+            <th>الفائدة</th>
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr>
+
+            <td>الطب</td>
+
+            <td>تشخيص الأمراض بالصور</td>
+
+            <td>دقة أعلى وسرعة أكبر</td>
+
+          </tr>
+
+          <tr>
+
+            <td>التعليم</td>
+
+            <td>منصات التعلم الذكية</td>
+
+            <td>تعليم مخصص لكل طالب</td>
+
+          </tr>
+
+          <tr>
+
+            <td>التجارة</td>
+
+            <td>توصيات المنتجات</td>
+
+            <td>تجربة تسوق أفضل</td>
+
+          </tr>
+
+          <tr>
+
+            <td>المواصلات</td>
+
+            <td>السيارات ذاتية القيادة</td>
+
+            <td>تقليل الحوادث</td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+
+      <div class="nav-buttons">
+
+        <button class="btn btn-outline" onclick="goToPage(1)">
+          → السابق
+        </button>
+
+        <button class="btn" onclick="goToPage(3)">
+          التالي ←
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Page 3 -->
+
+    <div class="page" id="page3">
+
+      <h2>مستقبل الذكاء الاصطناعي</h2>
+
+      <p>
+        يتوقع الخبراء أن الذكاء الاصطناعي سيغير شكل العالم خلال
+        العقود القادمة، حيث ستختفي بعض الوظائف التقليدية
+        وستظهر وظائف وتقنيات جديدة.
+      </p>
+
+      <h3>أبرز التحديات</h3>
+
+      <ul>
+
+        <li>الخصوصية وحماية البيانات</li>
+
+        <li>التحيز في الخوارزميات</li>
+
+        <li>الاعتماد الزائد على الآلة</li>
+
+        <li>فقدان بعض الوظائف التقليدية</li>
+
+      </ul>
+
+      <!-- Quiz Section -->
+
+      <div class="quiz-box">
+
+        <h3>🧠 اختبر معلوماتك</h3>
+
+        <p>
+          من هو العالم الذي أطلق مصطلح الذكاء الاصطناعي؟
+        </p>
+
+        <button class="quiz-option"
+                onclick="checkAnswer('خطأ')">
+
+          ألان تورينج
+
+        </button>
+
+        <button class="quiz-option"
+                onclick="checkAnswer('صح')">
+
+          جون مكارثي
+
+        </button>
+
+        <button class="quiz-option"
+                onclick="checkAnswer('خطأ')">
+
+          إيلون ماسك
+
+        </button>
+
+        <p id="answer-msg"></p>
+
+      </div>
+
+      <div class="nav-buttons">
+
+        <button class="btn btn-outline"
+                onclick="goToPage(2)">
+
+          → السابق
+
+        </button>
+
+        <span></span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <p>
+      CT1452 — موقع بحثي عن الذكاء الاصطناعي
+    </p>
+
+  </footer>
+
+  <!-- JavaScript Functions -->
+
+  <script type="text/javascript">
+
+    document.getElementById("page1")
+    .setAttribute("style", "display:block");
+
+    function goToPage(num) {
+
+      document.getElementById("page1")
+      .setAttribute("style", "display:none");
+
+      document.getElementById("page2")
+      .setAttribute("style", "display:none");
+
+      document.getElementById("page3")
+      .setAttribute("style", "display:none");
+
+      document.getElementById("page" + num)
+      .setAttribute("style", "display:block");
+
+    }
+
+    function checkAnswer(answer) {
+
+      if (answer === "صح") {
+
+        document.getElementById("answer-msg")
+        .innerHTML = "✅ إجابة صحيحة!";
+
+      }
+
+      else {
+
+        document.getElementById("answer-msg")
+        .innerHTML =
+        "❌ إجابة خاطئة، حاول مرة ثانية!";
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
